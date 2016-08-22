@@ -66,7 +66,7 @@
 
 				if ( $('[data-section="' + section + '"]').length ) {
 			    	$('html, body').animate({
-			        	scrollTop: $('[data-section="' + section + '"]').offset().top - 55
+			        	scrollTop: $('[data-section="' + section + '"]').offset().top
 			    	}, 500);
 			   }
 
@@ -104,7 +104,7 @@
 		    	navActive($(this.element).data('section'));
 		  	}
 		}, {
-	  		offset: '150px'
+	  		offset: '250px'
 		});
 
 		$section.waypoint(function(direction) {
@@ -112,7 +112,7 @@
 		    	navActive($(this.element).data('section'));
 		  	}
 		}, {
-		  	offset: function() { return -$(this.element).height() + 155; }
+		  	offset: function() { return -$(this.element).height() + 255; }
 		});
 
 	};
