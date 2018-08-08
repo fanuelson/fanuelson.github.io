@@ -1,204 +1,771 @@
-
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-	<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Java Public API</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="Fanuel Website Presentation" />
-	<meta name="keywords" content="fanuelson, fanuelson java, java api, github java, github api" />
-	<meta name="author" content="FANUEL NUNES" />
-
-  <!-- 
-	//////////////////////////////////////////////////////
-
-	FANUELSON PUBLIC JAVA API 
-	DESIGNED & DEVELOPED by FANUEL F NUNES
-		
-	Website: 		http://fanuelson.github.io/
-	Email: 			a@a.com
-	Twitter: 		
-	Facebook: 		
-
-	//////////////////////////////////////////////////////
-	 -->
-
-  	<!-- Facebook and Twitter integration -->
-	<meta property="og:title" content=""/>
-	<meta property="og:image" content=""/>
-	<meta property="og:url" content=""/>
-	<meta property="og:site_name" content=""/>
-	<meta property="og:description" content=""/>
-	<meta name="twitter:title" content="" />
-	<meta name="twitter:image" content="" />
-	<meta name="twitter:url" content="" />
-	<meta name="twitter:card" content="" />
-
-	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-	<link rel="shortcut icon" href="favicon.png">
-
-	<link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
-	
-	<!-- Animate.css -->
-	<link rel="stylesheet" href="css/animate.css">
-	<!-- Icomoon Icon Fonts-->
-	<link rel="stylesheet" href="css/icomoon.css">
-	<!-- Simple Line Icons -->
-	<link rel="stylesheet" href="css/simple-line-icons.css">
-	<!-- Bootstrap  -->
-	<link rel="stylesheet" href="css/bootstrap.css">
-	<!-- Owl Carousel  -->
-	<link rel="stylesheet" href="css/owl.carousel.min.css">
-	<link rel="stylesheet" href="css/owl.theme.default.min.css">
-	<!-- Style -->
-	<link rel="stylesheet" href="css/style.css">
+<html lang="en">
 
 
-	<!-- Modernizr JS -->
-	<script src="js/modernizr-2.6.2.min.js"></script>
-	<!-- FOR IE9 below -->
-	<!--[if lt IE 9]>
-	<script src="js/respond.min.js"></script>
+<head>
+    <title>Fanuel Nunes</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <link rel="icon" type="image/x-icon" href="favicon.png" />
+
+    <!-- Google font -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CVarela+Round" rel="stylesheet">
+
+    <!-- Bootstrap -->
+    <link type="text/css" rel="stylesheet" href="./assets/css/mdb.min.css" />
+    <link type="text/css" rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+    <link type="text/css" rel="stylesheet" href="./assets/css/jquery-ui.min.css" />
+
+    <!-- Owl Carousel -->
+    <link type="text/css" rel="stylesheet" href="./assets/css/owl.carousel.css" />
+    <link type="text/css" rel="stylesheet" href="./assets/css/owl.theme.default.css" />
+
+    <!-- Magnific Popup -->
+    <link type="text/css" rel="stylesheet" href="./assets/css/magnific-popup.css" />
+
+    <!--Icon Library-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+        crossorigin="anonymous">
+
+    <!-- Font Awesome Icon -->
+    <link rel="stylesheet" href="./assets/css/font-awesome.min.css">
+
+    <!-- Custom stlylesheet -->
+    <link type="text/css" rel="stylesheet" href="./assets/css/style.css" />
+
+    <link type="text/css" rel="stylesheet" href="./styles.css" />
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 	<![endif]-->
+</head>
 
-	</head>
-	<body>
-	<header role="banner" id="fh5co-header">
-		<div class="fluid-container">
-			<nav class="navbar navbar-default">
-				<div class="navbar-header">
-					<!-- Mobile Toggle Menu Button -->
-					<a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><i></i></a>
-					<a class="navbar-brand" href="index.html"><span><span><img style="width:40px; height:40px; margin-top: -5px" src="favicon.png"></img></span>anu</span>elson</a> 
-				</div>
-				<div id="navbar" class="navbar-collapse collapse">
-					<ul class="nav navbar-nav navbar-right">
-						<li class="active"><a href="#" data-nav-section="home"><span>Home</span></a></li>
-						<li><a href="#" data-nav-section="explore"><span>Explore</span></a></li>
-						<li><a href="#" data-nav-section="testimony"><span>Fun</span></a></li>
-					</ul>
-				</div>
-			</nav>
-	  </div>
-	</header>
+<body>
+    <!-- Header -->
+    <header id="home" style="overflow: hidden">
+        <div class="video-wrapper" style="background-color: black">
+            <video id="movVideo" src="./assets/img/video1.mov" style="min-width: 100%;"></video>
+        </div>
 
-	<section id="fh5co-home" data-section="home" style="background-image: url('images/background_city.jpg');" data-stellar-background-ratio="0.5">
-		<div class="gradient"></div>
-		<div class="container">
-			<div class="text-wrap">
-				<div class="text-inner">
-					<div class="row">
-						<div class="col-md-8 col-md-offset-2">
-							<h1 class="to-animate">FANUELSON PUBLIC JAVA APIS</h1>
-							<h2 class="to-animate"></h2>
-							<div class="call-to-action">
-								<a target="_blank" href="https://github.com/fanuelson" class="download to-animate">Github Perfil</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
+        <!-- Nav -->
+        <nav id="nav" class="navbar nav-transparent">
+            <div class="container">
 
-	<section id="fh5co-explore" data-section="explore">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12 section-heading text-center">
-					<h2 class="to-animate">Explore The Code</h2>
-					<div class="row">
-						<div class="col-md-8 col-md-offset-2 subtext to-animate">
-							<h3>Using good practices and patterns to code clean and legible</h3>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		
-		<div class="fh5co-explore">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-8 col-md-push-5 to-animate-2">
-						<img class="img-responsive" src="images/contrib1.PNG" alt="work">
-					</div>
-					<div class="col-md-4 col-md-pull-8 to-animate-2">
-						<div class="mt">
-							<h3>Real Project For Real Solutions</h3>
-							<p>Fork, clone, pull, commit, push or download the latest realeases to use in your project.</p>
-							<ul class="list-nav">
-								<li><i class="icon-check2"></i>Smart solutions</li>
-								<li><i class="icon-check2"></i>Writing more with less code</li>
-							</ul>
-						</div>
-					</div>
-					
-				</div>
-			</div>
-		</div>
+                <div class="navbar-header">
+                    <!-- Logo -->
+                    <div class="navbar-brand">
+                        <a href="index.html">
+                            <img class="logo" src="./assets/img/fn-bg-transparent.png" alt="logo">
+                            <img class="logo-alt" src="./assets/img/fn-white-bg-transparent.png" alt="logo">
+                        </a>
+                    </div>
+                    <!-- /Logo -->
 
-		<div class="fh5co-explore fh5co-explore-bg-color">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-8 col-md-pull-1 to-animate-3">
-						<img class="img-responsive" src="images/api-example1.PNG" alt="work">
-					</div>
-					<div class="col-md-4 to-animate-3">
-						<div class="mt">
-							<div>
-								<h4><i class="icon-book"></i>Documentation</h4>
-								<p>Read the documents to keep updated with new features and releases.</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
+                    <!-- Collapse nav button -->
+                    <div class="nav-collapse">
+                        <span></span>
+                    </div>
+                    <!-- /Collapse nav button -->
+                </div>
 
-	<section id="fh5co-testimony" data-section="testimony">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12 to-animate">
-					<div class="wrap-testimony">
-						<div class="item">
-							<div class="testimony-slide active text-center">
-								<header>
-									Space Shooter
-								</header>
-								<blockquote>
-									<iframe style="width:900px; height:600px; border: none" src="games/space-shooter/index.html"></iframe>
-								</blockquote>
-								<span>Fanuel, via Canvas</a></span>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
+                <!--  Main navigation  -->
+                <ul class="main-nav nav navbar-nav navbar-right">
+                    <li>
+                        <a href="#home">Home</a>
+                    </li>
+                    <li>
+                        <a href="#about">Sobre</a>
+                    </li>
+                    <li>
+                        <a href="#service">Competências</a>
+                    </li>
+                    <li>
+                        <a href="#contact">Contato</a>
+                    </li>
+                </ul>
+                <!-- /Main navigation -->
 
-	<!-- jQuery -->
-	<script src="js/jquery.min.js"></script>
-	<!-- jQuery Easing -->
-	<script src="js/jquery.easing.1.3.js"></script>
-	<!-- Bootstrap -->
-	<script src="js/bootstrap.min.js"></script>
-	<!-- Waypoints -->
-	<script src="js/jquery.waypoints.min.js"></script>
-	<!-- Stellar Parallax -->
-	<script src="js/jquery.stellar.min.js"></script>
-	<!-- Owl Carousel -->
-	<script src="js/owl.carousel.min.js"></script>
-	<!-- Google Map -->
-	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCefOgb1ZWqYtj7raVSmN4PL2WkTrc-KyA&sensor=false"></script>
-	<script src="js/google_map.js"></script>
-	<!-- Main JS (Do not remove) -->
-	<script src="js/main.js"></script>
+            </div>
+        </nav>
+        <!-- /Nav -->
 
-	</body>
+        <!-- home wrapper -->
+        <div class="home-wrapper">
+            <div class="container">
+                <div class="row">
+
+                    <!-- home content -->
+                    <div class="col-md-10 col-md-offset-1">
+                        <div class="home-content">
+                            <h1 class="white-text">Fanuel Nunes</h1>
+                            <p class="white-text">
+                                Full Stack Web Developer
+                            </p>
+                            <p class="white-text">
+                            </p>
+                        </div>
+                    </div>
+                    <!-- /home content -->
+
+                </div>
+            </div>
+        </div>
+        <!-- /home wrapper -->
+
+    </header>
+    <!-- /Header -->
+
+    <!-- ModaL -->
+    <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" style="padding-right: 17px;"
+        aria-hidden="true">
+        <div class="modal-dialog cascading-modal modal-avatar modal-sm" role="document">
+            <!--Content-->
+            <div class="modal-content my-modal-content">
+
+                <!--Header-->
+                <div class="modal-header">
+                    <img src="./assets/img/profile.jpeg" style="margin: 0em 4em;width: 130px;" class="rounded-circle img-responsive" alt="Avatar photo">
+                </div>
+                <!--Body-->
+                <div class="modal-body text-center mb-1">
+
+                    <h5 class="mt-1 mb-2 text-light">Fanuel Nunes</h5>
+
+                    <div class="md-form ml-0 mr-0 text-light">
+                        Este é meu site pessoal, aqui você encontrará uma parte dos meus conhecimentos e experiências na área de Tecnologia da Informação!
+                    </div>
+
+                    <div class="text-center mt-4 text-light">
+                        <button class="btn btn-cyan waves-effect waves-light" data-dismiss="modal">
+                            Fechar
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+            <!--/.Content-->
+        </div>
+    </div>
+    <!-- ModaL -->
+
+    <!-- About -->
+    <div id="about" class="section md-padding">
+
+        <!-- Container -->
+        <div class="container">
+
+            <!-- Row -->
+            <div class="row">
+
+                <!-- Section header -->
+                <div class="section-header text-center">
+                    <h2 class="title">Sobre!</h2>
+                </div>
+                <!-- /Section header -->
+
+                <!-- about -->
+                <div class="col-md-5 col-xs-6 work">
+                    <img class="img-responsive" src="./assets/img/web-gears.jpg" alt="">
+                    <!-- <div class="overlay"></div>
+                    <div class="work-content">
+                        <span>Indíce de Rendimento Acadêmico</span>
+                        <h3>Final de curso com IRA igual a 81%! Média do curso é 58%!</h3>
+                        <div class="work-link">
+                            <a class="lightbox" href="./assets/img/IRA.PNG">
+                                <i class="fa fa-search"></i>
+                            </a>
+                        </div>
+                    </div> -->
+                </div>
+
+                <div class="col-md-7 col-xs-6 work">
+                    <p style="text-indent: 30px;">Bem vindo ao meu website pessoal! Me chamo Fanuel e atualmente estou cursando Sistemas de Informação
+                        pela Universidade Federal de Juiz de Fora (UFJF), além disto, estudo continuamente novas tecnologias
+                        relacionadas a área de desenvolvimento de software mais especificamente para a web.
+                    </p>
+                </div>
+
+
+                <!-- /about -->
+
+            </div>
+            <!-- /Row -->
+
+        </div>
+        <!-- /Container -->
+
+    </div>
+    <!-- /About -->
+
+    <!-- Service -->
+    <div id="service" class="section md-padding competencias">
+
+        <!-- Container -->
+        <div class="container">
+
+            <!-- Row -->
+            <div class="row">
+
+                <!-- Section header -->
+                <div class="section-header text-center">
+                    <h2 class="title">Competências</h2>
+                    <p>Algumas das minhas competências adquiridas pela experiencia profissional e estudos pessoais. </p>
+                </div>
+                <!-- /Section header -->
+
+                <div id="competencia-loop" class="owl-carousel owl-theme">
+                    <div>
+                        <div class="col-md-10 col-md-offset-1">
+
+                            <div class="skillbar clearfix " data-percent="90%">
+                                <div class="skillbar-title" style="background: #d35400;">
+                                    <span>HTML5</span>
+                                </div>
+                                <div class="skillbar-bar" style="background: #e67e22;"></div>
+                                <div class="skill-bar-percent">90%</div>
+                            </div>
+                            <!-- End Skill Bar -->
+
+                            <div class="skillbar clearfix " data-percent="75%">
+                                <div class="skillbar-title" style="background: #2980b9;">
+                                    <span>CSS3</span>
+                                </div>
+                                <div class="skillbar-bar" style="background: #3498db;"></div>
+                                <div class="skill-bar-percent">75%</div>
+                            </div>
+                            <!-- End Skill Bar -->
+
+                            <div class="skillbar clearfix " data-percent="85%">
+                                <div class="skillbar-title" style="background: #eaee0e;">
+                                    <span>JS/ECMAscript</span>
+                                </div>
+                                <div class="skillbar-bar" style="background: #ebee59;"></div>
+                                <div class="skill-bar-percent">85%</div>
+                            </div>
+                            <!-- End Skill Bar -->
+
+                            <div class="skillbar clearfix " data-percent="85%">
+                                <div class="skillbar-title" style="background: #2c3e50;">
+                                    <span>jQuery</span>
+                                </div>
+                                <div class="skillbar-bar" style="background: #2c3e50;"></div>
+                                <div class="skill-bar-percent">85%</div>
+                            </div>
+                            <!-- End Skill Bar -->
+
+                            <div class="skillbar clearfix " data-percent="40%">
+                                <div class="skillbar-title" style="background: #46465e;">
+                                    <span>PHP</span>
+                                </div>
+                                <div class="skillbar-bar" style="background: #5a68a5;"></div>
+                                <div class="skill-bar-percent">40%</div>
+                            </div>
+                            <!-- End Skill Bar -->
+
+                            <div class="skillbar clearfix " data-percent="35%">
+                                <div class="skillbar-title" style="background: #333333;">
+                                    <span>Wordpress</span>
+                                </div>
+                                <div class="skillbar-bar" style="background: #525252;"></div>
+                                <div class="skill-bar-percent">35%</div>
+                            </div>
+                            <!-- End Skill Bar -->
+
+                            <!-- <div class="skillbar clearfix " data-percent="100%">
+                                        <div class="skillbar-title" style="background: #27ae60;"><span>SEO</span></div>
+                                        <div class="skillbar-bar" style="background: #2ecc71;"></div>
+                                        <div class="skill-bar-percent">100%</div>
+                                    </div>  -->
+
+                            <div class="skillbar clearfix " data-percent="50%">
+                                <div class="skillbar-title" style="background: #124e8c;">
+                                    <span>Photoshop</span>
+                                </div>
+                                <div class="skillbar-bar" style="background: #4288d0;"></div>
+                                <div class="skill-bar-percent">50%</div>
+                            </div>
+                            <!-- End Skill Bar -->
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="col-md-10 col-md-offset-1">
+
+                            <div class="skillbar clearfix " data-percent="90%">
+                                <div class="skillbar-title" style="background: #b83235;">
+                                    <span>AngularJS</span>
+                                </div>
+                                <div class="skillbar-bar" style="background: #de3d33;"></div>
+                                <div class="skill-bar-percent">90%</div>
+                            </div>
+                            <!-- End Skill Bar -->
+
+                            <div class="skillbar clearfix " data-percent="90%">
+                                <div class="skillbar-title" style="background: #b83235;">
+                                    <span>Angular 2+</span>
+                                </div>
+                                <div class="skillbar-bar" style="background: #de3d33;"></div>
+                                <div class="skill-bar-percent">90%</div>
+                            </div>
+                            <!-- End Skill Bar -->
+
+                            <div class="skillbar clearfix " data-percent="75%">
+                                <div class="skillbar-title" style="background: #4e8ef7;">
+                                    <span>Ionic</span>
+                                </div>
+                                <div class="skillbar-bar" style="background: #5892f0;"></div>
+                                <div class="skill-bar-percent">75%</div>
+                            </div>
+                            <!-- End Skill Bar -->
+
+                            <div class="skillbar clearfix " data-percent="90%">
+                                <div class="skillbar-title" style="background: #ce3825;">
+                                    <span>NPM</span>
+                                </div>
+                                <div class="skillbar-bar" style="background: #ca4f3f;"></div>
+                                <div class="skill-bar-percent">90%</div>
+                            </div>
+                            <!-- End Skill Bar -->
+
+                            <div class="skillbar clearfix " data-percent="80%">
+                                <div class="skillbar-title" style="background: #3e863d;">
+                                    <span>Node</span>
+                                </div>
+                                <div class="skillbar-bar" style="background: #90c63f;"></div>
+                                <div class="skill-bar-percent">80%</div>
+                            </div>
+                            <!-- End Skill Bar -->
+
+                            <div class="skillbar clearfix " data-percent="75%">
+                                <div class="skillbar-title" style="background: #3e863d;">
+                                    <span>NoSQL</span>
+                                </div>
+                                <div class="skillbar-bar" style="background: #90c63f;"></div>
+                                <div class="skill-bar-percent">75%</div>
+                            </div>
+                            <!-- End Skill Bar -->
+
+                            <div class="skillbar clearfix " data-percent="75%">
+                                <div class="skillbar-title" style="background: #3e863d;">
+                                    <span>MongoDB</span>
+                                </div>
+                                <div class="skillbar-bar" style="background: #90c63f;"></div>
+                                <div class="skill-bar-percent">75%</div>
+                            </div>
+                            <!-- End Skill Bar -->
+
+
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="col-md-10 col-md-offset-1">
+
+                            <div class="skillbar clearfix " data-percent="80%">
+                                <div class="skillbar-title" style="background: #3f9dee;">
+                                    <span>Parse Platform</span>
+                                </div>
+                                <div class="skillbar-bar" style="background: #5aacf3;"></div>
+                                <div class="skill-bar-percent">80%</div>
+                            </div>
+                            <!-- End Skill Bar -->
+
+                            <div class="skillbar clearfix " data-percent="50%">
+                                <div class="skillbar-title" style="background: #05aac0;">
+                                    <span>React</span>
+                                </div>
+                                <div class="skillbar-bar" style="background: #2bc6d1;"></div>
+                                <div class="skill-bar-percent">50%</div>
+                            </div>
+                            <!-- End Skill Bar -->
+
+                            <div class="skillbar clearfix " data-percent="35%">
+                                <div class="skillbar-title" style="background: #272525;">
+                                    <span>React Native</span>
+                                </div>
+                                <div class="skillbar-bar" style="background: #5a5959;"></div>
+                                <div class="skill-bar-percent">35%</div>
+                            </div>
+                            <!-- End Skill Bar -->
+
+                            <div class="skillbar clearfix " data-percent="70%">
+                                <div class="skillbar-title" style="background: #99424f;">
+                                    <span>Jest</span>
+                                </div>
+                                <div class="skillbar-bar" style="background: #af5c68;"></div>
+                                <div class="skill-bar-percent">70%</div>
+                            </div>
+                            <!-- End Skill Bar -->
+
+                            <div class="skillbar clearfix " data-percent="70%">
+                                <div class="skillbar-title" style="background: #8a4182;">
+                                    <span>Jasmine</span>
+                                </div>
+                                <div class="skillbar-bar" style="background: #a56ca0;"></div>
+                                <div class="skill-bar-percent">70%</div>
+                            </div>
+                            <!-- End Skill Bar -->
+
+                            <div class="skillbar clearfix " data-percent="55%">
+                                <div class="skillbar-title" style="background: #cf4647;">
+                                    <span>Gulp</span>
+                                </div>
+                                <div class="skillbar-bar" style="background: #cf4600;"></div>
+                                <div class="skill-bar-percent">55%</div>
+                            </div>
+                            <!-- End Skill Bar -->
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="col-md-10 col-md-offset-1">
+
+                            <div class="skillbar clearfix " data-percent="90%">
+                                <div class="skillbar-title" style="background: #070707;">
+                                    <span>Git</span>
+                                </div>
+                                <div class="skillbar-bar" style="background: #494b4b;"></div>
+                                <div class="skill-bar-percent">90%</div>
+                            </div>
+                            <!-- End Skill Bar -->
+
+                            <div class="skillbar clearfix " data-percent="90%">
+                                <div class="skillbar-title" style="background: #070707;">
+                                    <span>Github</span>
+                                </div>
+                                <div class="skillbar-bar" style="background: #494b4b;"></div>
+                                <div class="skill-bar-percent">90%</div>
+                            </div>
+                            <!-- End Skill Bar -->
+
+                            <div class="skillbar clearfix " data-percent="75%">
+                                <div class="skillbar-title" style="background: #e2432b;">
+                                    <span>GitLab</span>
+                                </div>
+                                <div class="skillbar-bar" style="background: #ed6a30;"></div>
+                                <div class="skill-bar-percent">75%</div>
+                            </div>
+                            <!-- End Skill Bar -->
+
+                            <div class="skillbar clearfix " data-percent="75%">
+                                <div class="skillbar-title" style="background: #0e47a6;">
+                                    <span>BitBucket</span>
+                                </div>
+                                <div class="skillbar-bar" style="background: #2857a8;"></div>
+                                <div class="skill-bar-percent">75%</div>
+                            </div>
+                            <!-- End Skill Bar -->
+
+                            <div class="skillbar clearfix " data-percent="75%">
+                                <div class="skillbar-title" style="background: #0e47a6;">
+                                    <span>Jira</span>
+                                </div>
+                                <div class="skillbar-bar" style="background: #2857a8;"></div>
+                                <div class="skill-bar-percent">75%</div>
+                            </div>
+                            <!-- End Skill Bar -->
+
+                            <div class="skillbar clearfix " data-percent="75%">
+                                <div class="skillbar-title" style="background: #0e47a6;">
+                                    <span>TFS(Microsoft)</span>
+                                </div>
+                                <div class="skillbar-bar" style="background: #2857a8;"></div>
+                                <div class="skill-bar-percent">75%</div>
+                            </div>
+                            <!-- End Skill Bar -->
+
+                            <div class="skillbar clearfix " data-percent="80%">
+                                <div class="skillbar-title" style="background: #0e47a6;">
+                                    <span>CI/CD</span>
+                                </div>
+                                <div class="skillbar-bar" style="background: #2857a8;"></div>
+                                <div class="skill-bar-percent">80%</div>
+                            </div>
+                            <!-- End Skill Bar -->
+
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="col-md-10 col-md-offset-1">
+
+                            <div class="skillbar clearfix " data-percent="90%">
+                                <div class="skillbar-title" style="background: #070707;">
+                                    <span>Java</span>
+                                </div>
+                                <div class="skillbar-bar" style="background: #494b4b;"></div>
+                                <div class="skill-bar-percent">90%</div>
+                            </div>
+                            <!-- End Skill Bar -->
+
+                            <div class="skillbar clearfix " data-percent="90%">
+                                <div class="skillbar-title" style="background: #070707;">
+                                    <span>JSF</span>
+                                </div>
+                                <div class="skillbar-bar" style="background: #494b4b;"></div>
+                                <div class="skill-bar-percent">90%</div>
+                            </div>
+                            <!-- End Skill Bar -->
+
+                            <div class="skillbar clearfix " data-percent="90%">
+                                <div class="skillbar-title" style="background: #070707;">
+                                    <span>PrimeFaces</span>
+                                </div>
+                                <div class="skillbar-bar" style="background: #494b4b;"></div>
+                                <div class="skill-bar-percent">90%</div>
+                            </div>
+                            <!-- End Skill Bar -->
+
+                            <div class="skillbar clearfix " data-percent="75%">
+                                <div class="skillbar-title" style="background: #e2432b;">
+                                    <span>RichFaces</span>
+                                </div>
+                                <div class="skillbar-bar" style="background: #ed6a30;"></div>
+                                <div class="skill-bar-percent">75%</div>
+                            </div>
+                            <!-- End Skill Bar -->
+
+                            <div class="skillbar clearfix " data-percent="75%">
+                                <div class="skillbar-title" style="background: #0e47a6;">
+                                    <span>SpringFramework</span>
+                                </div>
+                                <div class="skillbar-bar" style="background: #2857a8;"></div>
+                                <div class="skill-bar-percent">75%</div>
+                            </div>
+                            <!-- End Skill Bar -->
+
+                            <div class="skillbar clearfix " data-percent="75%">
+                                <div class="skillbar-title" style="background: #0e47a6;">
+                                    <span>SpringBoot</span>
+                                </div>
+                                <div class="skillbar-bar" style="background: #2857a8;"></div>
+                                <div class="skill-bar-percent">75%</div>
+                            </div>
+                            <!-- End Skill Bar -->
+
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="col-md-10 col-md-offset-1">
+
+                            <div class="skillbar clearfix " data-percent="60%">
+                                <div class="skillbar-title" style="background: #070707;">
+                                    <span>Jenkins/Hudson</span>
+                                </div>
+                                <div class="skillbar-bar" style="background: #494b4b;"></div>
+                                <div class="skill-bar-percent">60%</div>
+                            </div>
+                            <!-- End Skill Bar -->
+
+                            <div class="skillbar clearfix " data-percent="80%">
+                                <div class="skillbar-title" style="background: #070707;">
+                                    <span>Maven</span>
+                                </div>
+                                <div class="skillbar-bar" style="background: #494b4b;"></div>
+                                <div class="skill-bar-percent">80%</div>
+                            </div>
+                            <!-- End Skill Bar -->
+
+                            <div class="skillbar clearfix " data-percent="40%">
+                                <div class="skillbar-title" style="background: #070707;">
+                                    <span>Gradle</span>
+                                </div>
+                                <div class="skillbar-bar" style="background: #494b4b;"></div>
+                                <div class="skill-bar-percent">40%</div>
+                            </div>
+                            <!-- End Skill Bar -->
+
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="col-md-10 col-md-offset-1">
+                            <div class="skillbar clearfix " data-percent="80%">
+                                <div class="skillbar-title" style="background: #070707;">
+                                    <span>Linux</span>
+                                </div>
+                                <div class="skillbar-bar" style="background: #494b4b;"></div>
+                                <div class="skill-bar-percent">80%</div>
+                            </div>
+
+                            <div class="skillbar clearfix " data-percent="60%">
+                                <div class="skillbar-title" style="background: #070707;">
+                                    <span>Docker</span>
+                                </div>
+                                <div class="skillbar-bar" style="background: #494b4b;"></div>
+                                <div class="skill-bar-percent">60%</div>
+                            </div>
+
+                            <div class="skillbar clearfix " data-percent="70%">
+                                <div class="skillbar-title" style="background: #e45b1c;">
+                                    <span>AWS EC2</span>
+                                </div>
+                                <div class="skillbar-bar" style="background: #e77038;"></div>
+                                <div class="skill-bar-percent">70%</div>
+                            </div>
+
+                            <div class="skillbar clearfix " data-percent="60%">
+                                <div class="skillbar-title" style="background: #e45b1c;">
+                                    <span>AWS RDS</span>
+                                </div>
+                                <div class="skillbar-bar" style="background: #e77038;"></div>
+                                <div class="skill-bar-percent">60%</div>
+                            </div>
+
+                            <div class="skillbar clearfix " data-percent="30%">
+                                <div class="skillbar-title" style="background: #e45b1c;">
+                                    <span>AWS S3</span>
+                                </div>
+                                <div class="skillbar-bar" style="background: #e77038;"></div>
+                                <div class="skill-bar-percent">30%</div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- /Row -->
+
+        </div>
+        <!-- /Container -->
+
+    </div>
+    <!-- /Service -->
+
+    <!-- Contact -->
+    <div id="contact" class="section md-padding">
+
+        <!-- Container -->
+        <div class="container">
+
+            <!-- Row -->
+            <div class="row">
+
+                <!-- Section-header -->
+                <div class="section-header text-center">
+                    <h2 class="title">Entre em contato</h2>
+                    <p>Para dúvidas ou solicitação de currículo, histórico escolar, entre outros!</p>
+                </div>
+                <!-- /Section-header -->
+
+                <!-- contact -->
+                <div class="col-sm-4 col-md-offset-4">
+                    <div class="contact">
+                        <i class="fa fa-envelope"></i>
+                        <h3>Email</h3>
+                        <p>fanuelson@gmail.com</p>
+                    </div>
+                </div>
+                <!-- /contact -->
+
+                <!-- contact form -->
+                <div class="col-md-8 col-md-offset-2">
+
+                    <!-- <send-email></send-email> -->
+
+                </div>
+                <!-- /contact form -->
+
+            </div>
+            <!-- /Row -->
+
+        </div>
+        <!-- /Container -->
+
+    </div>
+    <!-- /Contact -->
+
+
+    <!-- Footer -->
+    <footer id="footer" class="sm-padding bg-dark">
+
+        <!-- Container -->
+        <div class="container">
+
+            <!-- Row -->
+            <div class="row">
+
+                <div class="col-md-12">
+
+                    <!-- footer logo -->
+                    <div class="footer-logo">
+                        <a href="index.html">
+                            <img src="./assets/img/fn-white-bg-transparent.png" alt="logo">
+                        </a>
+                    </div>
+                    <!-- /footer logo -->
+
+                    <!-- footer follow -->
+                    <ul class="footer-follow">
+                        <li>
+                            <a href="https://www.facebook.com/fanuel.nunes" target="_blank">
+                                <i class="fa fa-facebook"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/fanuel-nunes-388392120/" target="_blank">
+                                <i class="fa fa-linkedin"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/fanuelson" target="_blank">
+                                <i class="fa fa-github"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- /footer follow -->
+
+                    <div class="footer-copyright">
+                        <p>Copyright © 2018. Fanuel Nunes
+
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+            <!-- /Row -->
+
+        </div>
+        <!-- /Container -->
+
+    </footer>
+    <!-- /Footer -->
+
+    <!-- Back to top -->
+    <div id="back-to-top"></div>
+    <!-- /Back to top -->
+</body>
+
+
+<!-- /footer copyright -->
+<!-- Preloader -->
+<div id="preloader">
+    <div class="preloader">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+</div>
+
+<script type="text/javascript" src="./assets/js/jquery.min.js"></script>
+<script type="text/javascript" src="./assets/js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="./assets/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="./assets/js/jquery.magnific-popup.js"></script>
+<script type="text/javascript" src="./assets/js/mdb.min.js"></script>
+<script type="text/javascript" src="./assets/js/owl.carousel.min.js"></script>
+
+<script type="text/javascript" src="./assets/js/main.js"></script>
+<script type="text/javascript" src="./assets/js/my-script.js"></script>
+
+
 </html>
-
