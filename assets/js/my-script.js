@@ -141,7 +141,12 @@
         });
 
         setupCompetenciaCarousel();
+        setupScrollFlow();
     });
+
+    const setupScrollFlow = function() {
+        new ScrollFlow(); 
+    }
 
     const setupCompetenciaCarousel = function() {
         var myowl = $('#competencia-loop').owlCarousel({
