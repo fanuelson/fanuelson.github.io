@@ -38,11 +38,7 @@
         if (video.paused && !document.hidden) {
             try {
                 video.play();
-                setTimeout(function () {
-                    $('.home-content').show("pulsate", {}, 500, function () { });
-                    $('.navbar').show("pulsate", {}, 500, function () { });
-                }, 11100)
-
+                
             } catch (error) {
                 console.log("User doesn't interacted!", error);
             }
@@ -50,6 +46,13 @@
                 fadeInVideo();
                 event.off();
                 // enableScroll()
+            });
+            var event3 = $('#movVideo').on('timeupdate', function () {
+                if(this.currentTime >= 10.9) {
+                    $('.home-content').show("pulsate", {}, 500, function () { });
+                    $('.navbar').show("pulsate", {}, 500, function () { });
+                    event3.off();
+                }
             });
         }
     }
