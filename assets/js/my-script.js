@@ -42,17 +42,18 @@
             } catch (error) {
                 console.log("User doesn't interacted!", error);
             }
-            var event = $('#movVideo').on('ended', function () {
-                fadeInVideo();
-                event.off();
-                // enableScroll()
-            });
             var event3 = $('#movVideo').on('timeupdate', function () {
                 if(this.currentTime >= 10.9) {
                     $('.home-content').show("pulsate", {}, 500, function () { });
                     $('.navbar').show("pulsate", {}, 500, function () { });
-                    event3.off();
                 }
+            });
+
+            var event = $('#movVideo').on('ended', function () {
+                fadeInVideo();
+                event.off();
+                event3.off();
+                // enableScroll()
             });
         }
     }
