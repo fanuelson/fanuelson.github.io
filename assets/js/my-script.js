@@ -1,8 +1,6 @@
 (function ($) {
     "use strict"
 
-    console.log('oi')
-
     var userInteracted = false;
 
     const video = $('#movVideo')[0];
@@ -90,7 +88,6 @@
                     width: '0'
                 });
             });
-            console.log('resetting')
             resetEnable = false;
             animateEnable = true;
         }
@@ -103,7 +100,6 @@
                     width: $(this).attr('data-percent')
                 }, 6000);
             });
-            console.log('animating');
 
             animateEnable = false;
             setTimeout(() => {
@@ -163,7 +159,6 @@
         });
         // Listen to owl events:
         myowl.on('changed.owl.carousel', function(event) {
-            console.log('RODAR')
             resetSkillBars();
             animateSkillBar();
         })
